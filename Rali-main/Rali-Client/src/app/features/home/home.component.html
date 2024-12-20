@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rali Sports Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Content -->
+    <main class="p-8">
+        <h2 class="text-3xl font-bold text-[#055EAF] mb-6">AVAILABLE SPORTS</h2>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Loop over activities and render each using ActivityComponent -->
+          <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
+        </div>
+      </main>
+      
+
+</body>
+</html>
